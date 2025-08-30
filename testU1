@@ -1,0 +1,58 @@
+
+int num = 0;
+    int num2 = 5;
+    int num3 = 12;
+    int num0 = 13;
+    printf("El factorial de %d es ",num);
+    printf("%d \n", factorial(num));
+    printf("la combinatoria entre %d %d es: %f \n",num,num2, combinatoria(num,num2));
+    printf("La potencia de %d elevado a %d es: %d \n",num, num2, potencia(num,num2));
+    printf("e elevado a %d es %f \n",num, serieE(num,TOL));
+    printf("la raiz cuadrada de x: %d es %f \n",num3, raizCuadrada(num3,TOL));
+
+    int result = esFibonacci(num);
+
+    switch(result){
+        case 0:
+            printf("no esta dentro de la secuencia\n");
+            break;
+        case 1:
+            printf("esta dentro de la secuencia de fibonacci\n");
+            break;
+    }
+    int cClas = clasificacion(num3);
+    printf("El numero %d es clasificado como: \n",num3);
+    switch(cClas){
+        case -1:
+            printf("no se pueden calcular negativos o 0\n");
+            break;
+        case 0:
+            printf("Deficiente\n");
+            break;
+        case 1:
+            printf("Perfecto\n");
+            break;
+        case 2:
+            printf("Abundante\n");
+            break;
+    }
+
+    //Calculo de suma mediante sumas sucesivas
+    int calcSum = productoSum(num3,num2);
+    printf("la multiplicacion entre %d y %d es %d \n",num3,num2,calcSum);
+
+    //Calcular suma de los primeros n numeros
+    int calcPrim = sumaPrimeros(num2);
+    printf("la suma de los primeros %d numeros es: %d \n",num2,calcPrim);
+
+    //Calcula suma de los primeros n numeros pares
+    int calc1 = sumaPares(num2);
+    printf("la suma de los primeros numeros pares %d es: %d \n",num2,calc1);
+
+    //Calcula suma de los primeros n numeros pares
+    int calc2 = sumaNPares(num2);
+    printf("la suma de los primeros %d numeros pares es: %d \n",num2,calc2);
+
+    //esprimo?
+    int primo = esPrimo(num0);
+    printf("el numero %d es primo? %d \n",num0,primo);
