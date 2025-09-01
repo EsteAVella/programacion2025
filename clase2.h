@@ -21,3 +21,5 @@ int deleteNum(int *vec, int num ,int *ce);
 int esPalindromo(char *vec);
 
 int cantPalabra(char *vec);
+
+int valorPalabra(char *vec);

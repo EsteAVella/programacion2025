@@ -39,5 +39,8 @@ int main()
         break;
     }
 
+    printf("La palabra %s tiene el valor en entero de %d.\n",word, valorPalabra(word));
+
+
     return 0;
 }

@@ -95,3 +95,14 @@ int esPalindromo(char *vec){
 
     return 0;
 }
+
+int valorPalabra(char *vec){
+
+    int cant = 0;
+    int i = 0;
+    while(vec[i]){
+        cant += (int)vec[i];
+        i ++;
+    }
+    return cant;
+}
