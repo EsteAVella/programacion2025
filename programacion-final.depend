@@ -1,12 +1,19 @@
 # depslib dependency file v1.0
-1756414066 source:/home/esteban/workspace/programacion-final/main.c
+1756756920 source:/home/esteban/workspace/programacion-final/main.c
 	<stdio.h>
 	<stdlib.h>
 	"clase1.h"
+	"clase2.h"
 
-1756413852 /home/esteban/workspace/programacion-final/clase1.h
+1756579045 /home/esteban/workspace/programacion-final/clase1.h
 	<math.h>
 
 1756414150 source:/home/esteban/workspace/programacion-final/clase1.c
 	<math.h>
+
+1756757029 source:/home/esteban/workspace/programacion-final/clase2.c
+	<stdio.h>
+
+1756756946 /home/esteban/workspace/programacion-final/clase2.h
+	<stdio.h>
 

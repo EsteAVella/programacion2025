@@ -1,0 +1,23 @@
+#define ES_MINUSC(c) ( (c) >= 'a' && (c) <= 'z' ? 1 : 0 )
+#define ES_MAYUSC(c) ( (c) >= 'A' && (c) <= 'Z') // por defecto luego de evaluar me retorna 1 si es verdadero o 0 si es falso
+#define ES_LETRA(c) (ES_MAYUSC(c) || ES_MINUSC(c))
+#define A_MINUSC(c) ((ES_MAYUSC(c)) ? ((c) + ('a' - 'A')) : (c))
+#include <stdio.h>
+
+//Mostrar vector de ints;
+
+void mostrarVec( int *vec, int *ce);
+
+//Array unidireccionales
+
+int insertPoss (int*vec, int num, int pos,int *ce);
+
+int insertOrd (int *vec, int num, int *ce);
+
+int elimPoss(int *vec, int pos, int *ce);
+
+int deleteNum(int *vec, int num ,int *ce);
+
+int esPalindromo(char *vec);
+
+int cantPalabra(char *vec);
