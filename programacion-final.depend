@@ -17,3 +17,22 @@
 1756757128 /home/esteban/workspace/programacion-final/clase2.h
 	<stdio.h>
 
+1756580050 source:/home/esteban/workspace/programacion2025/clase1.c
+	<math.h>
+
+1757091542 source:/home/esteban/workspace/programacion2025/clase2.c
+	<stdio.h>
+
+1757091580 source:/home/esteban/workspace/programacion2025/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"clase1.h"
+	"clase2.h"
+
+1756580050 /home/esteban/workspace/programacion2025/clase1.h
+	<math.h>
+
+1757091419 /home/esteban/workspace/programacion2025/clase2.h
+	<stdio.h>
+

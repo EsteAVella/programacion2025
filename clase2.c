@@ -2,6 +2,7 @@
 #define ES_MAYUSC(c) ( (c) >= 'A' && (c) <= 'Z') // por defecto luego de evaluar me retorna 1 si es verdadero o 0 si es falso
 #define ES_LETRA(c) (ES_MAYUSC(c) || ES_MINUSC(c))
 #define A_MINUSC(c) ((ES_MAYUSC(c)) ? ((c) + ('a' - 'A')) : (c))
+
 #include <stdio.h>
 
 void mostrarVec( int *vec, int *ce){
@@ -14,7 +15,7 @@ void mostrarVec( int *vec, int *ce){
 }
 
 
-int insertPoss(int *vec, int num, int pos,int *ce){
+int insertPoss(int *vec, int num, int pos, int *ce){
 
     if( pos < 0 || pos > *ce) return -1;
     for(int i = *ce; i > pos; i--){
@@ -26,7 +27,7 @@ int insertPoss(int *vec, int num, int pos,int *ce){
     return 0;
 }
 
-int insertOrd ( int *vec, int num, int *ce){
+int insertOrd (int *vec, int num, int *ce){
 
     int i = *ce-1;
     while( i >= 0 && vec[i] > num ){
@@ -34,7 +35,7 @@ int insertOrd ( int *vec, int num, int *ce){
         i--;
     }
     vec[i+1] = num;
-    (*ce)++;
+    (*ce) ++;
 
     return 0;
 }
@@ -77,22 +78,24 @@ int cantPalabra(char *vec){
     return cant;
 }
 
-
+//problema dos espacios ademas de saber que no modifico la cadena de caracteres, agregar los while que faltan para avanzar
+//agregar la pregunta si es minuscula agregarle comparar con su opuesto
 int esPalindromo(char *vec){
 
-    char *pf = vec + cantPalabra(vec)-1;
+    char *pf = vec + cantPalabra(vec) - 1;
     char *pi = vec;
-    while(pf-pi >= 0){
-        if(!ES_LETRA(*pi)) pi++;
-        if(!ES_LETRA(*pf)) pf--;
+    while(pf - pi >= 0){
+        while(!(ES_LETRA(*pi)) || !(ES_LETRA(*pf)) ){
+            if(!ES_LETRA(*pi)) pi++;
+            if(!ES_LETRA(*pf)) pf--;
+        }
         if(A_MINUSC(*pf) != A_MINUSC(*pi))return -1;
-        if(pf-pi == 0 && *pf == *pi) return 1;
+        if(pf - pi == 0 && *pf == *pi) return 1;// condi para ser palindromo
         if(A_MINUSC(*pf) == A_MINUSC(*pi)){
             pf--;
             pi++;
         }
     }
-
     return 0;
 }
 
@@ -105,4 +108,14 @@ int valorPalabra(char *vec){
         i ++;
     }
     return cant;
+}
+
+char* proxPal(char *vec){
+
+    vec++;
+    while(!ES_LETRA(*vec)){
+        vec++;
+        if(!*vec) return vec;
+    }
+    return vec;
 }

@@ -6,7 +6,7 @@
 
 //Mostrar vector de ints;
 
-void mostrarVec( int *vec, int *ce);
+void mostrarVec(int *vec,int *ce);
 
 //Array unidireccionales
 
@@ -16,10 +16,16 @@ int insertOrd (int *vec, int num, int *ce);
 
 int elimPoss(int *vec, int pos, int *ce);
 
-int deleteNum(int *vec, int num ,int *ce);
+int deleteNum(int *vec, int num, int *ce);
 
 int esPalindromo(char *vec);
 
 int cantPalabra(char *vec);
 
 int valorPalabra(char *vec);
+
+void invertirVec(char *vec);
+//para cuando tengo un vector en la ultima posicion le agrego uno y busco la proxima palabra
+char* proxPal(char *vec);
+
+char* avanzaPalabra(char *vec);
