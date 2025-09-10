@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add directory="../programacion-final" />
 		</Compiler>
+		<Unit filename="apuntes_clase" />
 		<Unit filename="clase1.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -40,6 +41,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="clase2.h" />
+		<Unit filename="funcionesviejas" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -26,6 +26,12 @@ int valorPalabra(char *vec);
 
 void invertirVec(char *vec);
 //para cuando tengo un vector en la ultima posicion le agrego uno y busco la proxima palabra
-char* proxPal(char *vec);
+char* proxPal(char *vec, char **ini, char **fin);
 
-char* avanzaPalabra(char *vec);
+void mostrarVecPos(char *ini, char *fin);
+
+//MIS COPIAS DE FUNCIONES QUE SON DE STRING.H
+int mStrlen(const char *vec);
+
+char* mStrcpy(char* dest, const char *vec);
+

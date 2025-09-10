@@ -110,12 +110,55 @@ int valorPalabra(char *vec){
     return cant;
 }
 
-char* proxPal(char *vec){
+void mostrarVecPos(char *ini, char *fin){
 
-    vec++;
+    printf(":::::::::::La palabra es::::::::::: \n\t");
+    while(fin >= ini){
+        printf("%c", *ini);
+        ini++;
+    }
+    printf("\n::::::::::Fin palabra:::::::::::: \n");
+}
+
+
+char* proxPal(const char *vec, char **ini, char **fin){
+
     while(!ES_LETRA(*vec)){
         vec++;
-        if(!*vec) return vec;
     }
+    *ini = vec;
+    while(ES_LETRA(*vec)){
+        vec ++;
+    }
+    *fin = vec;
+    while(!ES_LETRA(*vec)){
+        vec++;
+    }
+
     return vec;
+
 }
+
+//MIS COPIAS DE FUNCIONES QUE SON DE STRING.H
+
+int mStrlen(const char *vec){
+    int aux = 0;
+    while(*vec){
+        vec++;
+        aux++;
+    }
+    return aux;
+}
+
+char* mStrcpy(char* dest, const char *vec){
+    char *ini = dest;
+
+    while(*vec){
+        *dest = *vec;
+        vec++;
+        dest++;
+    }
+
+    return ini;
+}
+
