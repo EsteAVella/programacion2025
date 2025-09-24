@@ -2,24 +2,19 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="funcionesviejas" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="clase1.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1140" topLine="0" />
+			<Cursor1 position="139" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="324" topLine="4" />
 		</Cursor>
 	</File>
 	<File name="clase2.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2756" topLine="108" />
-		</Cursor>
-	</File>
-	<File name="clase2.h" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="849" topLine="4" />
-		</Cursor>
-	</File>
-	<File name="clase1.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="139" topLine="0" />
+			<Cursor1 position="1771" topLine="85" />
 		</Cursor>
 	</File>
 	<File name="clase1.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -27,9 +22,9 @@
 			<Cursor1 position="34" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="clase2.h" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="861" topLine="11" />
+			<Cursor1 position="300" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

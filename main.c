@@ -6,13 +6,23 @@
 #define TOL 0.5
 #define EL 5
 #define TAM 25
+#define FIL 10
+#define COL 10
 
 int main()
 {
-    char vec[TAM] = {"hola copia mundo"};
+    char vec[TAM] = {"hola"};
+    char vec2[TAM] = {" mundo"};
     char *pf;
     char *pi;
     char *texto = vec;
+
+    int mat [FIL][COL] = {
+                         {1,2,3},
+                         {4,5,6},
+                         {7,8,9}
+    };
+
     /*
     char pc[TAM];
     mostrarVecPos(vec,pf);
@@ -39,6 +49,12 @@ int main()
     printf("TERCERA\n");
     texto = proxPal(texto,&pi,&pf);
     mostrarVecPos(pi, pf);
+
+    printf("%s \n", mStrconcat(vec,vec2));
+
+    int fil = 3;
+    int col = 3;
+    imprimirMatriz(mat,fil,col);
 
     return 0;
 }

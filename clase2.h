@@ -2,6 +2,8 @@
 #define ES_MAYUSC(c) ( (c) >= 'A' && (c) <= 'Z') // por defecto luego de evaluar me retorna 1 si es verdadero o 0 si es falso
 #define ES_LETRA(c) (ES_MAYUSC(c) || ES_MINUSC(c))
 #define A_MINUSC(c) ((ES_MAYUSC(c)) ? ((c) + ('a' - 'A')) : (c))
+#define FIL 10
+#define COL 10
 #include <stdio.h>
 
 //Mostrar vector de ints;
@@ -35,3 +37,6 @@ int mStrlen(const char *vec);
 
 char* mStrcpy(char* dest, const char *vec);
 
+char* mStrconcat(char *vec, const char *add);
+
+void imprimirMatriz(int mat[FIL][COL], int cfilas, int cCol);

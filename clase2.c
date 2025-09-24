@@ -2,7 +2,8 @@
 #define ES_MAYUSC(c) ( (c) >= 'A' && (c) <= 'Z') // por defecto luego de evaluar me retorna 1 si es verdadero o 0 si es falso
 #define ES_LETRA(c) (ES_MAYUSC(c) || ES_MINUSC(c))
 #define A_MINUSC(c) ((ES_MAYUSC(c)) ? ((c) + ('a' - 'A')) : (c))
-
+#define FIL 10
+#define COL 10
 #include <stdio.h>
 
 void mostrarVec( int *vec, int *ce){
@@ -162,3 +163,31 @@ char* mStrcpy(char* dest, const char *vec){
     return ini;
 }
 
+char* mStrconcat(char *vec, const char *add){
+
+    char* ini = vec;
+
+    while(*vec){
+        vec++;
+    }
+    while(*add){
+        *vec = *add;
+        vec++;
+        add++;
+    }
+
+    return ini;
+}
+
+void imprimirMatriz(int mat[FIL][COL], int cFil, int cCol){
+
+    for(int f = 0; f < cFil; f++){
+        for(int c = 0; c < cCol ; c++){
+            printf("%d -", mat[f][c]);
+        }
+        printf("\n");
+    }
+
+
+
+}
