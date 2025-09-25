@@ -38,3 +38,49 @@
     printf("el valor de la primera cadena de caracteres %d\n",strlen(pal1));
     printf("el valor de la primera cadena de caracteres %d\n",strlen(pal2));
     printf("el valor de la primera cadena de caracteres %d\n",strlen(pal3));
+
+
+
+    char vec2[TAM] = {" mundo"};
+    char *pf;
+    char *pi;
+    char *texto = vec;
+
+    int mat [FIL][COL] = {
+                         {1,2,3},
+                         {4,5,6},
+                         {7,8,9}
+    };
+
+    /*
+    char pc[TAM];
+    mostrarVecPos(vec,pf);
+    //PREGUNTAR POR ESTO QUE SE PASA EL SEGMENTACION FAULT;
+
+    printf("la cantidad de espacios de %s, es : %d \n", vec, mStrlen(vec));
+
+    printf("La copia de :::: %s :::: es :::: %s ::::\n", vec, mStrcpy(pc, vec));
+
+    printf("La palabra :::: %s :::: \n", vec);
+
+    */
+    pi = vec;
+
+    printf("PRIMERA: \n");
+    texto = proxPal(texto,&pi,&pf);
+    mostrarVecPos(pi, pf);
+
+
+    printf("SEGUNDA:\n");
+    texto = proxPal(texto,&pi,&pf);
+    mostrarVecPos(pi, pf);
+
+    printf("TERCERA\n");
+    texto = proxPal(texto,&pi,&pf);
+    mostrarVecPos(pi, pf);
+
+    printf("%s \n", mStrconcat(vec,vec2));
+
+    int fil = 3;
+    int col = 3;
+    imprimirMatriz(mat,fil,col);

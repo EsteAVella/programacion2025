@@ -3,6 +3,7 @@
 #include <string.h>
 #include "clase1.h"
 #include "clase2.h"
+#include "clase5.h"
 #define TOL 0.5
 #define EL 5
 #define TAM 25
@@ -11,50 +12,27 @@
 
 int main()
 {
-    char vec[TAM] = {"hola"};
-    char vec2[TAM] = {" mundo"};
-    char *pf;
-    char *pi;
-    char *texto = vec;
+    int v[] = {5, 2, 9, 1, 7};
+    int n = sizeof(v) / sizeof(v[0]);
 
-    int mat [FIL][COL] = {
-                         {1,2,3},
-                         {4,5,6},
-                         {7,8,9}
-    };
+    burbuja(v, n, des);
 
-    /*
-    char pc[TAM];
-    mostrarVecPos(vec,pf);
-    //PREGUNTAR POR ESTO QUE SE PASA EL SEGMENTACION FAULT;
+    for (int i = 0; i < n; i++) {
+        printf("%d ", v[i]);
+    }
 
-    printf("la cantidad de espacios de %s, es : %d \n", vec, mStrlen(vec));
+    printf("\n");
 
-    printf("La copia de :::: %s :::: es :::: %s ::::\n", vec, mStrcpy(pc, vec));
+    float vf[] = {5.2, 2.2, 9.1, 1.2, 7.3};
+    n = sizeof(vf) / sizeof(vf[0]);
 
-    printf("La palabra :::: %s :::: \n", vec);
+    burbujaFloat(vf,n, ascF);
 
-    */
-    pi = vec;
-
-    printf("PRIMERA: \n");
-    texto = proxPal(texto,&pi,&pf);
-    mostrarVecPos(pi, pf);
+    for (int i = 0; i < n; i++) {
+        printf("%.1f ", vf[i]);
+    }
 
 
-    printf("SEGUNDA:\n");
-    texto = proxPal(texto,&pi,&pf);
-    mostrarVecPos(pi, pf);
-
-    printf("TERCERA\n");
-    texto = proxPal(texto,&pi,&pf);
-    mostrarVecPos(pi, pf);
-
-    printf("%s \n", mStrconcat(vec,vec2));
-
-    int fil = 3;
-    int col = 3;
-    imprimirMatriz(mat,fil,col);
 
     return 0;
 }

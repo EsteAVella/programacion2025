@@ -9,7 +9,7 @@
 void mostrarVec( int *vec, int *ce){
 
     printf("VECTOR = {");
-    for( int i = 0; i< *ce; i++){
+    for( int i = 0; i < *ce; i++){
         printf(" %d ",vec[i]);
     }
     printf("}; \n");

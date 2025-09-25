@@ -21,19 +21,26 @@
 1756580050 source:/home/esteban/workspace/programacion2025/clase1.c
 	<math.h>
 
-1757548057 source:/home/esteban/workspace/programacion2025/clase2.c
+1758754295 source:/home/esteban/workspace/programacion2025/clase2.c
 	<stdio.h>
 
-1757548411 source:/home/esteban/workspace/programacion2025/main.c
+1758761879 source:/home/esteban/workspace/programacion2025/main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"clase1.h"
 	"clase2.h"
+	"clase5.h"
 
 1756580050 /home/esteban/workspace/programacion2025/clase1.h
 	<math.h>
 
 1757547577 /home/esteban/workspace/programacion2025/clase2.h
 	<stdio.h>
+
+1758762148 source:/home/esteban/workspace/programacion2025/clase5.c
+	<stddef.h>
+
+1758761864 /home/esteban/workspace/programacion2025/clase5.h
+	<stdlib.h>
 
