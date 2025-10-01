@@ -65,3 +65,39 @@ void normalizarVec(char *vec){
         vec = proxPalabra(vec);
     }
 }
+
+int dentro(char a, char *offset){
+    int calc = 0;
+
+    while(*offset && a != *offset){
+        offset ++;
+        calc++;
+    }
+    if(*offset == a) return calc;
+
+    return 0;
+}
+
+char cambio(char a, char* offset, int cant){
+    int N = strlen(offset);
+    int pos = dentro(a,offset);
+
+    int nueva_pos = (pos + cant) % N;
+
+    return offset[nueva_pos];
+}
+
+void eDesencript(char *vec, char *offset){
+    int valor;
+    int iter = 0;
+
+    while(*vec){
+        valor = dentro(*vec,offset);
+        iter++;
+        if(!ES_LETRA(*vec)) iter = 0;
+        if(valor){
+            *vec = cambio(*vec,offset,iter);
+        }
+        vec++;
+    }
+}

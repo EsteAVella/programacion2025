@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add directory="../programacion-final" />
 		</Compiler>
+		<Unit filename=".gitignore" />
 		<Unit filename="apuntes_clase" />
 		<Unit filename="clase1.c">
 			<Option compilerVar="CC" />

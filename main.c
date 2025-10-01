@@ -14,11 +14,12 @@
 
 int main()
 {
-    char vec[] = "holas hola hola mundo hola";
-    char *palabra = "hola mundo";
+    char cadena[] = "Nj qemh v ljs kraenkqbres; lj oqe qemh es oqevorme sgn ellhs --Istqt Asdmgj";
+    char offset[] = "abcdghijkoqtuv";
 
-    printf("%s \n",palabra);
-    normalizarVec(vec);
-    printf("%s \n", vec);
+    printf("%s \t \n\n", cadena);
+    eDesencript(cadena,offset);
+    printf("%s \n\n", cadena);
+
     return 0;
 }

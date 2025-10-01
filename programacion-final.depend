@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1759073717 source:/home/esteban/workspace/programacion-final/main.c
+1759350889 source:/home/esteban/workspace/programacion-final/main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -49,12 +49,12 @@
 1758890472 source:/home/esteban/workspace/programacion-final/clase5.c
 	<stddef.h>
 
-1759073929 source:/home/esteban/workspace/programacion-final/clase3.c
+1759352004 source:/home/esteban/workspace/programacion-final/clase3.c
 	<string.h>
 	<stdlib.h>
 
 1758890472 /home/esteban/workspace/programacion-final/clase5.h
 	<stdlib.h>
 
-1759073493 /home/esteban/workspace/programacion-final/clase3.h
+1759348268 /home/esteban/workspace/programacion-final/clase3.h
 
