@@ -4,35 +4,21 @@
 #include "clase1.h"
 #include "clase2.h"
 #include "clase5.h"
+#include "clase3.h"
 #define TOL 0.5
 #define EL 5
 #define TAM 25
 #define FIL 10
 #define COL 10
+//puedo trabajar con el vector en vivo cuando es asi tengo que dejarle el void
 
 int main()
 {
-    int v[] = {5, 2, 9, 1, 7};
-    int n = sizeof(v) / sizeof(v[0]);
+    char vec[] = "holas hola hola mundo hola";
+    char *palabra = "hola mundo";
 
-    burbuja(v, n, des);
-
-    for (int i = 0; i < n; i++) {
-        printf("%d ", v[i]);
-    }
-
-    printf("\n");
-
-    float vf[] = {5.2, 2.2, 9.1, 1.2, 7.3};
-    n = sizeof(vf) / sizeof(vf[0]);
-
-    burbujaFloat(vf,n, ascF);
-
-    for (int i = 0; i < n; i++) {
-        printf("%.1f ", vf[i]);
-    }
-
-
-
+    printf("%s \n",palabra);
+    normalizarVec(vec);
+    printf("%s \n", vec);
     return 0;
 }

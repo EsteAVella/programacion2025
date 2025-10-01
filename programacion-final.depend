@@ -1,10 +1,12 @@
 # depslib dependency file v1.0
-1757534910 source:/home/esteban/workspace/programacion-final/main.c
+1759073717 source:/home/esteban/workspace/programacion-final/main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"clase1.h"
 	"clase2.h"
+	"clase5.h"
+	"clase3.h"
 
 1756579045 /home/esteban/workspace/programacion-final/clase1.h
 	<math.h>
@@ -12,10 +14,10 @@
 1756414150 source:/home/esteban/workspace/programacion-final/clase1.c
 	<math.h>
 
-1757534410 source:/home/esteban/workspace/programacion-final/clase2.c
+1758890472 source:/home/esteban/workspace/programacion-final/clase2.c
 	<stdio.h>
 
-1757534241 /home/esteban/workspace/programacion-final/clase2.h
+1758890472 /home/esteban/workspace/programacion-final/clase2.h
 	<stdio.h>
 
 1756580050 source:/home/esteban/workspace/programacion2025/clase1.c
@@ -43,4 +45,16 @@
 
 1758761864 /home/esteban/workspace/programacion2025/clase5.h
 	<stdlib.h>
+
+1758890472 source:/home/esteban/workspace/programacion-final/clase5.c
+	<stddef.h>
+
+1759073929 source:/home/esteban/workspace/programacion-final/clase3.c
+	<string.h>
+	<stdlib.h>
+
+1758890472 /home/esteban/workspace/programacion-final/clase5.h
+	<stdlib.h>
+
+1759073493 /home/esteban/workspace/programacion-final/clase3.h
 

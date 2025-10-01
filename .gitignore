@@ -1,0 +1,70 @@
+
+# =========================
+# Compilación en C/C++
+# =========================
+
+# Objetos y ejecutables
+*.o
+*.obj
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+
+# Archivos de depuración
+*.pdb
+*.idb
+
+# =========================
+# Directorios de build
+# =========================
+/bin/
+/obj/
+/build/
+/Debug/
+/Release/
+/dist/
+/x64/
+/x86/
+
+# =========================
+# IDEs y entornos comunes
+# =========================
+
+# Code::Blocks
+*.depend
+*.layout
+*.cbp
+*.cbtmp
+
+# Visual Studio / MSVC
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.user
+*.vs/
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# =========================
+# Archivos temporales
+# =========================
+*.log
+*.tmp
+*.swp
+*.bak
+*~
+
+# =========================
+# Sistema operativo
+# =========================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
