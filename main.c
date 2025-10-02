@@ -8,7 +8,7 @@ int main()
                     {"toyota","corolla",2020,15000.20},
                     {"fiat","uno",1994,3500}
                 };
-
+    //Faltaria implementar el trio de funcions con eso practicar un poco mas
     map(&flota,aumentarPrecio,3);
     printf("%s \t \n\n", cadena);
     eDesencript(cadena,offset);

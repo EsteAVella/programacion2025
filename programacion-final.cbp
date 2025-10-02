@@ -50,10 +50,15 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="clase5.h" />
+		<Unit filename="clase6.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="clase6.h" />
 		<Unit filename="funcionesviejas" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="main.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
