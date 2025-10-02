@@ -26,13 +26,8 @@
 1758754295 source:/home/esteban/workspace/programacion2025/clase2.c
 	<stdio.h>
 
-1758761879 source:/home/esteban/workspace/programacion2025/main.c
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	"clase1.h"
-	"clase2.h"
-	"clase5.h"
+1759361592 source:/home/esteban/workspace/programacion2025/main.c
+	"main.h"
 
 1756580050 /home/esteban/workspace/programacion2025/clase1.h
 	<math.h>
@@ -43,7 +38,7 @@
 1758762148 source:/home/esteban/workspace/programacion2025/clase5.c
 	<stddef.h>
 
-1758761864 /home/esteban/workspace/programacion2025/clase5.h
+1758762206 /home/esteban/workspace/programacion2025/clase5.h
 	<stdlib.h>
 
 1758890472 source:/home/esteban/workspace/programacion-final/clase5.c
@@ -57,4 +52,27 @@
 	<stdlib.h>
 
 1759348268 /home/esteban/workspace/programacion-final/clase3.h
+
+1759357055 source:/home/esteban/workspace/programacion2025/clase3.c
+	<string.h>
+	<stdlib.h>
+
+1759361615 source:/home/esteban/workspace/programacion2025/clase6.c
+
+1759359960 /home/esteban/workspace/programacion2025/main.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"clase1.h"
+	"clase2.h"
+	"clase3.h"
+	"clase4.h"
+	"clase5.h"
+	"clase6.h"
+
+1759357055 /home/esteban/workspace/programacion2025/clase3.h
+
+1759357055 /home/esteban/workspace/programacion2025/clase4.h
+
+1759361377 /home/esteban/workspace/programacion2025/clase6.h
 
