@@ -7,6 +7,8 @@
 #include "clase4.h"
 #include "clase5.h"
 #include "clase6.h"
+//#include "clase7.h"
+#include "clase8.h"
 #define TOL 0.5
 #define EL 5
 #define TAM 25

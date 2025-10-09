@@ -54,6 +54,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="clase6.h" />
+		<Unit filename="clase8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="clase8.h" />
 		<Unit filename="funcionesviejas" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
