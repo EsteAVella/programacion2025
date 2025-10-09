@@ -29,3 +29,4 @@ void filter(void *vec, int *ce, size_t tamB, int (*filtro)(void *)) {
     // actualizar cantidad de elementos válidos
     *ce = (int)((pe - (char *)vec) / tamB);
 }
+

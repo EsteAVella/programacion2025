@@ -2,6 +2,7 @@
 
 int main()
 {
+    FILE *pf;
     tAlum alumnos[] = {
         {"Juan Perez", 7.5},
         {"Maria Gomez", 9.2},
@@ -19,9 +20,14 @@ int main()
     // Aplicar filtro
     filter(alumnos, &ce, sizeof(tAlum), aprobado);
 
+    fopen("aprobados.txt","w");
+    if(!pf)return -1;
     printf("\n Lista filtrada (solo aprobados):\n");
-    for (int i = 0; i < ce; i++)
+    for (int i = 0; i < ce; i++){
         printf("%-20s | %.1f\n", alumnos[i].NyAp, alumnos[i].nota);
+        fwrite(alumnos[i],size_t tAlum,*ce,pf );
+    }
 
+    fclose(pf);
     return 0;
 }
