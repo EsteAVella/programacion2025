@@ -1,33 +1,18 @@
-#include "main.h"
+#include <stdio.h>
+#define MAXLINE 100
+#define COL 6
+#define FIL 6
+#include "repaso.h"
 
 int main()
 {
-    FILE *pf;
-    tAlum alumnos[] = {
-        {"Juan Perez", 7.5},
-        {"Maria Gomez", 9.2},
-        {"Luis Fernandez", 5.8},
-        {"Ana Torres", 8.4},
-        {"Carlos Ruiz", 4.9}
-    };
-
-    int ce = sizeof(alumnos) / sizeof(alumnos[0]);
-
-    printf("Lista original:\n");
-    for (int i = 0; i < ce; i++)
-        printf("%-20s | %.1f\n", alumnos[i].NyAp, alumnos[i].nota);
-
-    // Aplicar filtro
-    filter(alumnos, &ce, sizeof(tAlum), aprobado);
-
-    fopen("aprobados.txt","w");
-    if(!pf)return -1;
-    printf("\n Lista filtrada (solo aprobados):\n");
-    for (int i = 0; i < ce; i++){
-        printf("%-20s | %.1f\n", alumnos[i].NyAp, alumnos[i].nota);
-        fwrite(alumnos[i],size_t tAlum,*ce,pf );
-    }
-
-    fclose(pf);
+    int a[10] = {1,3,5};
+    int b[10] = {0,3,5};
+    int ce1 = 3;
+    int ce2 = 3;
+    void* c = a;
+    void* d = b;
+    void *pi = unionVectores(c,ce1,d,ce2,sizeof(int),cmp);
+    free(pi);
     return 0;
 }

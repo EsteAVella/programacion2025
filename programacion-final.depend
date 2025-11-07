@@ -26,8 +26,9 @@
 1758754295 source:/home/esteban/workspace/programacion2025/clase2.c
 	<stdio.h>
 
-1759964799 source:/home/esteban/workspace/programacion2025/main.c
-	"main.h"
+1762385123 source:/home/esteban/workspace/programacion2025/main.c
+	<stdio.h>
+	"repaso.h"
 
 1756580050 /home/esteban/workspace/programacion2025/clase1.h
 	<math.h>
@@ -79,8 +80,13 @@
 
 1759964838 /home/esteban/workspace/programacion2025/clase8.h
 
-1759965842 source:/home/esteban/workspace/programacion2025/clase8.c
+1759971023 source:/home/esteban/workspace/programacion2025/clase8.c
 	<stddef.h>
 	<string.h>
 	<stdio.h>
+
+1762384876 source:/home/esteban/workspace/programacion2025/repaso.c
+	<stddef.h>
+
+1762385009 /home/esteban/workspace/programacion2025/repaso.h
 

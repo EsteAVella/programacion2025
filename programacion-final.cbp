@@ -63,6 +63,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="main.h" />
+		<Unit filename="repaso.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="repaso.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

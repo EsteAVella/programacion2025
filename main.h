@@ -7,6 +7,7 @@
 #include "clase4.h"
 #include "clase5.h"
 #include "clase6.h"
+#include "repaso.h"
 //#include "clase7.h"
 #include "clase8.h"
 #define TOL 0.5
