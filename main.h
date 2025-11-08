@@ -8,11 +8,11 @@
 #include "clase5.h"
 #include "clase6.h"
 #include "repaso.h"
+#include "matriz.h"
 //#include "clase7.h"
 #include "clase8.h"
 #define TOL 0.5
 #define EL 5
-#define TAM 25
-#define FIL 10
-#define COL 10
+#define TAMANO 25
+
 //puedo trabajar con el vector en vivo cuando es asi tengo que dejarle el void

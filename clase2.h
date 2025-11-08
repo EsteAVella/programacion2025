@@ -2,9 +2,9 @@
 #define ES_MAYUSC(c) ( (c) >= 'A' && (c) <= 'Z') // por defecto luego de evaluar me retorna 1 si es verdadero o 0 si es falso
 #define ES_LETRA(c) (ES_MAYUSC(c) || ES_MINUSC(c))
 #define A_MINUSC(c) ((ES_MAYUSC(c)) ? ((c) + ('a' - 'A')) : (c))
-#define FIL 10
-#define COL 10
 #include <stdio.h>
+#define FIL 3
+#define COL 3
 
 //Mostrar vector de ints;
 

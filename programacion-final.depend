@@ -1,12 +1,8 @@
 # depslib dependency file v1.0
-1759350889 source:/home/esteban/workspace/programacion-final/main.c
+1762571928 source:/home/esteban/workspace/programacion-final/main.c
 	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	"clase1.h"
-	"clase2.h"
-	"clase5.h"
-	"clase3.h"
+	"repaso.h"
+	"main.h"
 
 1756579045 /home/esteban/workspace/programacion-final/clase1.h
 	<math.h>
@@ -17,7 +13,7 @@
 1758890472 source:/home/esteban/workspace/programacion-final/clase2.c
 	<stdio.h>
 
-1758890472 /home/esteban/workspace/programacion-final/clase2.h
+1762548269 /home/esteban/workspace/programacion-final/clase2.h
 	<stdio.h>
 
 1756580050 source:/home/esteban/workspace/programacion2025/clase1.c
@@ -42,14 +38,15 @@
 1758762206 /home/esteban/workspace/programacion2025/clase5.h
 	<stdlib.h>
 
-1758890472 source:/home/esteban/workspace/programacion-final/clase5.c
+1762548219 source:/home/esteban/workspace/programacion-final/clase5.c
 	<stddef.h>
+	<stdlib.h>
 
-1759352004 source:/home/esteban/workspace/programacion-final/clase3.c
+1762546404 source:/home/esteban/workspace/programacion-final/clase3.c
 	<string.h>
 	<stdlib.h>
 
-1758890472 /home/esteban/workspace/programacion-final/clase5.h
+1762547144 /home/esteban/workspace/programacion-final/clase5.h
 	<stdlib.h>
 
 1759348268 /home/esteban/workspace/programacion-final/clase3.h
@@ -89,4 +86,44 @@
 	<stddef.h>
 
 1762385009 /home/esteban/workspace/programacion2025/repaso.h
+
+1759367369 source:/home/esteban/workspace/programacion-final/clase6.c
+
+1762572012 source:/home/esteban/workspace/programacion-final/clase8.c
+	<stddef.h>
+	<string.h>
+	<stdio.h>
+
+1762551380 source:/home/esteban/workspace/programacion-final/matriz.c
+	<stdio.h>
+	"matriz.h"
+
+1762547106 source:/home/esteban/workspace/programacion-final/repaso.c
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+
+1762550566 /home/esteban/workspace/programacion-final/matriz.h
+
+1762546293 /home/esteban/workspace/programacion-final/repaso.h
+
+1762548274 /home/esteban/workspace/programacion-final/main.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"clase1.h"
+	"clase2.h"
+	"clase3.h"
+	"clase4.h"
+	"clase5.h"
+	"clase6.h"
+	"repaso.h"
+	"matriz.h"
+	"clase8.h"
+
+1759008780 /home/esteban/workspace/programacion-final/clase4.h
+
+1759367369 /home/esteban/workspace/programacion-final/clase6.h
+
+1762571894 /home/esteban/workspace/programacion-final/clase8.h
 

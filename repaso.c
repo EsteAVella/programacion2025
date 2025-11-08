@@ -1,5 +1,6 @@
 #include <stddef.h>
-
+#include <stdlib.h>
+#include <string.h>
 void* unionVectores2(void* vec1,int ce1, void* vec2, int ce2, size_t tam, int cmp(void*,void*)){
 
     void* aux = malloc((ce1+ ce2)*tam);

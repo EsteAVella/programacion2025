@@ -1,8 +1,9 @@
 #include <stddef.h>
+#include <stdlib.h>
 char* encriptarChar(int TAM, int offset, char* tipo, char* vec){
 
     char* pi = malloc(TAM+1);
-    if(!pi) return -1;
+    if(!pi) return NULL;
     char* ini = pi;
     while(*vec){
         *pi += *vec + offset;
@@ -16,7 +17,7 @@ char* encriptarChar(int TAM, int offset, char* tipo, char* vec){
 void* encriptar( size_t,int offset, char* tipo, char* vec){
 
     char* pi = malloc(12+1);
-    if(!pi) return -1;
+    if(!pi) return NULL;
     char* ini = pi;
     while(*vec){
         *pi += *vec + offset;
