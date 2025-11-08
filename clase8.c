@@ -7,6 +7,14 @@ typedef struct {
     float nota;
 } tAlum;
 
+typedef struct {
+    int dni;
+    char apellido[20];
+    char nombre[30];
+    float peso;
+} tPersona;
+
+
 int aprobado(void *alum) {
     tAlum *a = (tAlum *) alum;
     return a->nota >= 4.0;
@@ -132,7 +140,57 @@ void menu(){
                 break;
             case 4:
                 break;
-            }
-        } while(op =! 4);
+        }
+    } while((op =! 4));
 }
 
+void* buscarElemento(void* list, void* element, size_t tam, int ce){
+
+    char* pBus = list;
+    char* pEle = element;
+    int op;
+    while(ce > 0){
+        op = memcmp(pBus,pEle,tam);
+        if(op == 0) return pBus;
+        pBus+= tam;
+        ce--;
+    }
+    return NULL;
+}
+
+int sumarNotas(int* list, int ce){
+    int acum = 0;
+
+    while(ce > 0){
+        acum += *list;
+        list++;
+        ce--;
+    }
+    return acum;
+}
+
+void cambiarPunteros(int* a, int* b){
+    int aux = 0;
+    aux = *a;
+    *a = *b;
+    *b = aux;
+}
+
+void imprimirVecEntero(int* lista, int ce){
+
+    printf("\n aca se imprime la lista\n { ");
+    while(ce >0 ){
+        printf(" %d ", *lista);
+        lista++;
+        ce--;
+    }
+    printf("}");
+
+}
+
+int cmpAscPersona(const void* a,const void *b){
+
+    tPersona* p1 = (tPersona*)a;
+    tPersona* p2 = (tPersona*)b;
+    return (p2->dni- p1->dni);
+}
