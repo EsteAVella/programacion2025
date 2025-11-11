@@ -52,3 +52,12 @@ void cambiarPunteros(int* a, int* b);
 void imprimirVecEntero(int* lista, int ce);
 
 int cmpAscPersona(const void* a,const void *b);
+
+void intercambioMem(void*, void*, size_t);
+
+int comparadorInt(void* a, void* b);
+
+void ordenamientoGenerico(void* vec,int ce, size_t tam, int comparador(void*,void*));
+
+int abrirBin();
+

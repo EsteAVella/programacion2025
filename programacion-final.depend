@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1762609507 source:/home/esteban/workspace/programacion-final/main.c
+1762824770 source:/home/esteban/workspace/programacion-final/main.c
 	<stdio.h>
 	"repaso.h"
 	"main.h"
@@ -87,12 +87,16 @@
 
 1762385009 /home/esteban/workspace/programacion2025/repaso.h
 
-1759367369 source:/home/esteban/workspace/programacion-final/clase6.c
+1762824311 source:/home/esteban/workspace/programacion-final/clase6.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
 
-1762610317 source:/home/esteban/workspace/programacion-final/clase8.c
+1762814747 source:/home/esteban/workspace/programacion-final/clase8.c
 	<stddef.h>
 	<string.h>
 	<stdio.h>
+	<stdlib.h>
 
 1762551380 source:/home/esteban/workspace/programacion-final/matriz.c
 	<stdio.h>
@@ -123,7 +127,7 @@
 
 1759008780 /home/esteban/workspace/programacion-final/clase4.h
 
-1759367369 /home/esteban/workspace/programacion-final/clase6.h
+1762824779 /home/esteban/workspace/programacion-final/clase6.h
 
-1762609506 /home/esteban/workspace/programacion-final/clase8.h
+1762814827 /home/esteban/workspace/programacion-final/clase8.h
 

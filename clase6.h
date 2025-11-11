@@ -10,3 +10,15 @@ typedef struct {
 void aumentarPrecio(tAuto*veh);
 
 void map(tAuto*flota,void accion(tAuto* veh), int ce);
+
+void escribirTexto();
+
+void leerArchivo();
+
+void crearDatos();
+
+void crearAlumnos();
+
+void calcularPromedioArc();
+
+void mostrarArchivo();

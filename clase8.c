@@ -1,6 +1,7 @@
 #include <stddef.h>
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef struct {
     char NyAp[30];
@@ -193,4 +194,59 @@ int cmpAscPersona(const void* a,const void *b){
     tPersona* p1 = (tPersona*)a;
     tPersona* p2 = (tPersona*)b;
     return (p2->dni- p1->dni);
+}
+
+void intercambioMem(void *ubi1, void *ubi2, size_t tam){
+
+    char* aux = malloc(tam);
+    char* p1 = ubi1;
+    char* p2 = ubi2;
+
+    memcpy(aux, p1, tam);
+    memcpy(p1, p2, tam);
+    memcpy(p2, aux, tam);
+
+    free(aux);
+}
+
+
+int comparadorInt(void* a, void* b){
+
+    int A = *(int*)a;
+    int B = *(int*)b;
+
+    if(A < B)return -1;
+    if(A > B)return 1;
+    return 0;
+}
+
+void ordenamientoGenerico(void* vec, int ce, size_t tam, int (*comparador)(void*, void*)) {
+
+    char* base = (char*)vec;
+
+    for (int i = 0; i < ce - 1; i++) {
+        for (int j = 0; j < ce - i - 1; j++) {
+
+            char* actual = base + j * tam;
+            char* siguiente = base + (j + 1) * tam;
+
+            if (comparador(actual, siguiente) > 0) {
+                intercambioMem(actual, siguiente, tam);
+            }
+        }
+    }
+}
+
+int abrirBin(){
+
+    FILE *pf;
+    pf = fopen("archivo.bin","rb");
+
+    if(!pf){
+        printf("no se abrio el archivo macho");
+        return 0;
+    }
+
+    fclose(pf);
+    return 1;
 }
