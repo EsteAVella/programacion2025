@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+#include <string.h>
 #define NAME "datos.txt"
 
 typedef struct {
@@ -229,3 +230,32 @@ void ordenar(int vec[], unsigned ce){
         fin--;
     }
 }
+
+void imprimirVec(int vec[], unsigned ce ){
+
+    for(int i = 0; i < ce; i++){
+        printf("%d. %d\n",i+1,vec[i]);
+    }
+
+}
+
+void ordenarGen(void* datos, unsigned ce, size_t tam, int accion(void*,void*)){
+    char aux[tam];
+    char *p = datos;
+    char *ini = (char*)datos;
+    char *fin = ini + (ce - 1)*tam;
+
+    while(fin > ini){
+        p = ini;
+        while(p < fin){
+            if(accion(p,p+tam)>0){
+                memcpy(aux,p,tam);
+                memcpy(p,(p+tam),tam);
+                memcpy((p+tam),aux,tam);
+            }
+            p+= tam;
+        }
+        fin-= tam;
+    }
+}
+

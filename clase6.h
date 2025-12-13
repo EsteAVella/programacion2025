@@ -34,3 +34,7 @@ void sumaUno(void *a);
 void duplicar(void *a);
 
 void ordenar(int vec[], unsigned ce);
+
+void imprimirVec(int [], unsigned);
+
+void ordenarGen(void* lista, unsigned ce, size_t tam, int ordenar(void*,void*));

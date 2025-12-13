@@ -5,34 +5,18 @@
 
 int main()
 {
-    FILE *pf;
-    pf = fopen("datos.txt","r");
-    escribirTexto();
+
     int vec[6] = { 2,5,1,7,4,3};
     unsigned ce = 6;
+
     printf("Previo al ordenar : \n");
-    for(int i = 0; i < ce; i++){
-        printf("%d. %d\n",i+1,vec[i]);
-    }
+    imprimirVec(vec,ce);
 
     printf("despues del ordenar : \n");
     ordenar(vec,ce);
-   // miMap(vec,ce,sizeof(int),sumaUno);
+    imprimirVec(vec,ce);
 
-    for(int i = 0; i < ce; i++){
-        printf("%d. %d\n",i+1,vec[i]);
-    }
-
-
-   // char buffer[256];
-
-    //leerArchivo();
-    //crearAlumnos();
-
-    //calcularPromedioArc();
-
-
-    fclose(pf);
+    // miMap(vec,ce,sizeof(int),sumaUno);
     return 0;
 
 }
