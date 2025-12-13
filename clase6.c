@@ -34,7 +34,7 @@ void escribirTexto(){
     FILE *pf;
     pf = fopen(NAME,"w");
 
-    tHumano pers[] = {{"Juan",25}, {"Maria",31},{"Olga",99} };
+    tHumano pers[] = {{"Juan"}, {"Maria"},{"Olga"} };
     if(!pf){
         printf("cagamos no abrio personas.txt");
         return;
@@ -169,4 +169,63 @@ void calcularPromedioArc() {
     remove("alumnos.txt");
     rename("alumnos_temp.txt", "alumnos.txt");
     printf("Archivo actualizado con formato mejorado.\n");
+}
+
+void printArchivo() {
+    FILE *pf = fopen("alumnos.txt", "r");
+    char linea[256];
+    int nro = 1;
+
+    if (!pf) {
+        printf("Error al abrir archivo\n");
+        return;
+    }
+
+    printf("=== INSPECCION DE ARCHIVO ===\n");
+
+    while (fgets(linea, sizeof(linea), pf)) {
+        printf("[%02d] %s", nro++, linea);
+    }
+
+    printf("==============================\n");
+    fclose(pf);
+}
+
+void miMap(void* dato, unsigned ce, size_t tam, void accion(void* a)){
+    char *p = dato;
+
+    while(ce > 0){
+        accion(p);
+        p+= tam;
+        ce--;
+    }
+}
+
+void sumaUno(void *a){
+    int *p = (int*)a;
+    (*p)++;
+}
+
+void duplicar(void *a){
+    int *p = (int*)a;
+    *p = (*p)*2;
+}
+
+void ordenar(int vec[], unsigned ce){
+    int aux;
+    int *p;
+    int *fin = vec + ce -1;
+
+    while(fin > vec){
+        p = vec;
+        while(p < fin){
+            if(*p > *(p+1)){
+                aux = *p;
+                *p = *(p+1);
+                *(p+1) = aux;
+            }
+            p++;
+        }
+        fin--;
+    }
 }

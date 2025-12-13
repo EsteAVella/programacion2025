@@ -4,12 +4,12 @@ typedef struct {
         char modelo[TAM];
         int anio;
         double precio;
-} tAuto;
+} tAutos;
 
 
-void aumentarPrecio(tAuto*veh);
+void aumentarPrecio(tAutos*veh);
 
-void map(tAuto*flota,void accion(tAuto* veh), int ce);
+void map(tAutos*flota,void accion(tAutos* veh), int ce);
 
 void escribirTexto();
 
@@ -22,3 +22,15 @@ void crearAlumnos();
 void calcularPromedioArc();
 
 void mostrarArchivo();
+
+void printArchivo();
+
+void miMap(void* datos, unsigned ce, size_t tam, void accion(void*));
+
+int ordenarInt(void *a, void *b);
+
+void sumaUno(void *a);
+
+void duplicar(void *a);
+
+void ordenar(int vec[], unsigned ce);
